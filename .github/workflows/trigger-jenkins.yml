@@ -1,23 +1,20 @@
 name: Trigger Jenkins on Merge
 
-# Esegui l'azione solo su "push" a un branch specifico (ad esempio main o un altro branch)
 on:
-  push:
-    branches:
-      - main  # Cambia il branch se necessario
+  pull_request:
+    types: [closed]
 
 jobs:
   trigger-jenkins:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
-    # Step per chiamare Jenkins
     - name: Trigger Jenkins Job
       run: |
-        JENKINS_URL="https://jenkins-jenkins.apps.6658525ddfd152001ef3dcb7.cloud.techzone.ibm.com/"
+        JENKINS_URL="https://jenkins-jenkins.apps.6658525ddfd152001ef3dcb7.cloud.techzone.ibm.com/job/test-pipeline/build"
         JENKINS_USER="admin"
         JENKINS_API_TOKEN="1198dbed7c03746ae4723915bd5459372e"
 
-        # Usa curl per chiamare l'API REST di Jenkins
         curl -X POST "$JENKINS_URL" \
         --user "$JENKINS_USER:$JENKINS_API_TOKEN"
