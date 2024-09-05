@@ -1,0 +1,33 @@
+info:
+  version: 1.0.0
+  title: devops-apis
+  name: devops-apis
+gateways:
+  - datapower-api-gateway
+plans:
+  default-plan:
+    title: Default Plan
+    description: Default Plan
+    rate-limits:
+      default:
+        value: 1000/1second
+    apis:
+      toolkit-api1.0.0: {}
+      user-api1.0.0: {}
+apis:
+  toolkit-api1.0.0:
+    $ref: .\toolkit-api_1.0.0.yaml
+  user-api1.0.0:
+    $ref: .\user-api_1.0.0.yaml
+visibility:
+  view:
+    type: public
+    orgs: []
+    tags: []
+    enabled: true
+  subscribe:
+    type: authenticated
+    orgs: []
+    tags: []
+    enabled: true
+product: 1.0.0
