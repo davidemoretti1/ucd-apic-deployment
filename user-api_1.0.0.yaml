@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: User api
+  title: User api Fixed
   x-ibm-name: user-api
 basePath: /
 x-ibm-configuration:
@@ -56,6 +56,7 @@ x-ibm-configuration:
     enabled: true
     success-content: activity
     error-content: payload
+  application-authentication: {}
 paths:
   /users/{userid}:
     get:
