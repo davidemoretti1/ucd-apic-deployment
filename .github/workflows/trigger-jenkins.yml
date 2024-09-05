@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Trigger Jenkins Job
       run: |
-        JENKINS_URL="https://jenkins-jenkins.apps.6658525ddfd152001ef3dcb7.cloud.techzone.ibm.com/job/test-pipeline/build"
+        JENKINS_URL="https://jenkins-jenkins.apps.6658525ddfd152001ef3dcb7.cloud.techzone.ibm.com/job/velocity-apic/build"
         JENKINS_USER="admin"
         JENKINS_API_TOKEN="1198dbed7c03746ae4723915bd5459372e"
 
