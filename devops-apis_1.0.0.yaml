@@ -12,13 +12,10 @@ plans:
       default:
         value: 1000/1second
     apis:
-      toolkit-api1.0.0: {}
-      user-api1.0.0: {}
+      http-bin-api1.0.0: {}
 apis:
-  toolkit-api1.0.0:
-    $ref: toolkit-api_1.0.0.yaml
-  user-api1.0.0:
-    $ref: user-api_1.0.0.yaml
+  http-bin-api1.0.0:
+    $ref: http-bin-api_1.0.0.yaml
 visibility:
   view:
     type: public
