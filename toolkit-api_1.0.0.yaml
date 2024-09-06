@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: Toolkit-api FIXED
+  title: Toolkit-api FIXED 3
   x-ibm-name: toolkit-api
   version: 1.0.0
 x-ibm-configuration:
