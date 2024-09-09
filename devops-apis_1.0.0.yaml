@@ -1,6 +1,6 @@
 info:
   version: 1.0.0
-  title: devops-apis
+  title: devops-apis-fix-4
   name: devops-apis
 gateways:
   - datapower-api-gateway
