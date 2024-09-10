@@ -1,6 +1,6 @@
 info:
   version: 1.0.0
-  title: devops-apis-fix-5
+  title: devops-apis-fix-7
   name: devops-apis
 gateways:
   - datapower-api-gateway
