@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: http-bin-api
+  title: http-bin-api-fixed
   x-ibm-name: http-bin-api
 servers:
   - url: /http-bin-api
