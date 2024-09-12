@@ -1,9 +1,9 @@
 info:
-  title: http-bin-api-fixed auto product
+  title: http-bin-api-fixed-10 auto product
   name: http-bin-api-auto-product
   version: 1.0.0
 apis:
-  http-bin-api-fixed:
+  http-bin-api-fixed-10:
     $ref: .\http-bin-api_1.0.0.yaml
 gateways:
   - datapower-api-gateway
